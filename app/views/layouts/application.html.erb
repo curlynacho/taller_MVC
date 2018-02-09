@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>FirstApp</title>
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +10,15 @@
   </head>
 
   <body>
+    <!-- As a link -->
+<nav class="navbar navbar-light bg-light navbar-inverse">
+  <a class="navbar-brand" href= "<%= root_path %>">one</a>
+  <a class="navbar-link" href= "<%= pages_two_path %>" >two</a>
+  <a class="navbar-link" href= "<%= pages_three_path %>" >three</a>
+
+</nav>
+
+    </nav>
     <%= yield %>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
